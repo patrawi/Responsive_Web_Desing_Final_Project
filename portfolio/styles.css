@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+  background: #fff;
+  color: #000;
+  scroll-behavior: smooth;
+}
+a,
+a:target,
+a:visited,
+a:hover,
+a:focus {
+  color: white;
+  text-decoration: none;
+}
+body {
+  font-size: 1.4rem;
+  text-rendering: optimizeLegibility;
+}
+
+body,
+ul,
+ol,
+dl {
+  margin: 0;
+}
+article,
+aside,
+audio,
+footer,
+header,
+nav,
+section,
+video {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+p {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  margin: 0;
+}
+
+div,
+section {
+  padding: 0;
+  margin: 0;
+}
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+}
+td {
+  padding: 0.5rem;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+input[type="submit"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner {
+  border: 0px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+input:required:after {
+  color: #f00;
+  content: " *";
+}
+
+input[type="email"]:invalid {
+  background: #f00;
+}
+
+.right {
+  float: right;
+  margin-left: 2rem;
+  clear: right;
+}
+.left {
+  float: left;
+  margin-right: 2rem;
+  clear: left;
+}
+
+sub,
+sup {
+  line-height: 0;
+}
+
+#navbar {
+  background-color: #be3144;
+  width: 100vw;
+  padding: 2rem 3rem;
+
+  color: white;
+  position: fixed;
+  box-shadow: 5px 1px 10px black;
+}
+.navigation-tab {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+#welcome-section {
+  background: linear-gradient(62deg, #2a2b2e 100%, #181719 0%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+#welcome-section div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#welcome-section h1 {
+  color: white;
+  font-size: 4rem;
+  line-height: 0;
+}
+
+#welcome-section p {
+  color: #be3144;
+  line-height: 0;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+#projects {
+  width: 100%;
+  background-color: #45567d;
+}
+
+#projects h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 5rem 4rem;
+  border-bottom: 2px white solid;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .project-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .project-tile {
+    width: 45%;
+    height: calc(100%-6.8rem);
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .project-box {
+    justify-content: space-around;
+  }
+  .project-tile {
+    width: 30%;
+    object-fit: cover;
+    height: calc(100%-6.8rem);
+  }
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem 0;
+  box-shadow: 1px 1px 5px black;
+}
+
+.project-tile p {
+  background-color: #303841;
+  color: white;
+  padding: 20px 20px;
+}
+
+.code {
+  color: #303841;
+  transition: orange 0.3s ease-out;
+}
+
+.all {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background-color: #303841;
+  transition: background-color 0.3s ease-out;
+  border-radius: 8px;
+}
+
+.all:hover {
+  background-color: #be3144;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+#contact {
+  background-color: #303841;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.contact-title {
+  color: white;
+  font-size: 4rem;
+}
+
+.contact-description {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+#footer {
+  background-color: #303841;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  border-top: 3px solid #be3144;
+  padding: 3rem;
+}
+
+.contact-icon {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s linear;
+}
+
+.contact-icon:hover {
+  transform: translateY(20px);
+}
